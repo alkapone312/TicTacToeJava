@@ -68,7 +68,6 @@ public class Score {
 				char s = plane[0][j] != '#' ? plane[0][j] : ' ';
 				for(int i = 0; i < size ; i++)
 				{
-					System.out.println(plane[i][j]);
 					if(plane[i][j]==s) score++;
 					else {score = 0; break;}
 					if(score==size) return s;
