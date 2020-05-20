@@ -46,8 +46,7 @@ public class Score {
 				if(score==size) return s;
 			}
 		}
-		else 
-		{
+
 			//score around middle
 			int score = 0;
 			
@@ -67,15 +66,14 @@ public class Score {
 			for(int j = 0 ; j < size ; j++)
 			{
 				char s = plane[0][j] != '#' ? plane[0][j] : ' ';
-				for(int i=0; i < size ; i++)
+				for(int i = 0; i < size ; i++)
 				{
+					System.out.println(plane[i][j]);
 					if(plane[i][j]==s) score++;
 					else {score = 0; break;}
 					if(score==size) return s;
 				}
 			}
-
-		}
 		
 		//if there's no winner
 		return '#';
